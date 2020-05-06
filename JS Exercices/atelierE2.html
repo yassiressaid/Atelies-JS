@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Programme In2</title>
+     <script language="JavaScript">
+    function Preferer(x)
+       { switch(x)
+           { case 1 : alert('Votre choix:'+'classique');break;
+             case 2 : alert('Votre choix:'+'jazz');break;
+             case 3 : alert('Votre choix:'+'rock');break;
+             case 4 : alert('Votre choix:'+'pop');break;
+             case 5 : alert('Votre choix:'+'hip-hop');break;       
+           };   
+       }; 
+   </script> 
+</head>
+<body>
+  <form name="musique">
+      <select name="choix" onchange="Preferer(document.musique.choix.selectedIndex)">
+          <option value="choix">choisissez:</option>
+          <option value="classique">classique</option>
+          <option value="jazz" id="demo">jazz</option>
+          <option value="rock">rock</option>
+          <option value="pop">pop</option>
+          <option value="hip-hop">hip-hop</option>    
+      </select>
+  </form>
+</body>
+</html>
